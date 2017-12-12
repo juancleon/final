@@ -1,0 +1,35 @@
+<h2 class="page-header">Dashboard</h2>
+<p>Admin Dashboard</p>
+<style type="text/css">
+th
+{
+    padding:0 80px 0 0px;
+}
+</style>
+
+<div>
+  <table>
+      <thead>
+          <th>Name</th>
+          <th>E-mail</th>
+          <th>Telephone</th>
+          <th>Company</th>
+          <th>Escort Name</th>
+          <th>Id</th>
+      </thead>
+      <tbody>
+       {{# each items }}
+       <tr>
+           <article class="item">
+              <td>{{ this.name }}</td>
+               <td>{{ this.email }}</td>
+               <td>{{ this.telephone }}</td>
+               <td>{{ this.company }}</td>
+               <td>{{ this.escortname }}</td>
+               <td>{{ this._id }}</div>
+           </article>
+      </tr>
+       {{/each}}
+         </tbody>
+    </table>
+</div>
